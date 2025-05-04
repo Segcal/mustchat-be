@@ -17,7 +17,7 @@ const databaseURL = process.env.DATABASE_URL;
 
 app.use(
     cors({
-        origin: process.env.ORIGIN,
+        origin: 'https://mustchat-fe.vercel.app',
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true,
     })
