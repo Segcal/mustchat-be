@@ -37,10 +37,7 @@ app.use("/api/contacts", constactsRoutes);
 app.use("/api/messages", messagesRoutes);
 
 // Connect to MongoDB before starting the server
-mongoose.connect(databaseURL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+mongoose.connect(databaseURL,)
 .then(() => {
     console.log("DB connection established");
     const server = app.listen(port, () => {
